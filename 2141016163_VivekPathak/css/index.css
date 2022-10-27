@@ -1,0 +1,23 @@
+*{
+	font-family: tahoma;
+	background-color: skyblue;
+	
+	}
+ h1{
+	
+	text-align: center;
+	}
+img{
+	display: block;
+	border-radius: 10%;
+	width:400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+a{
+	color: brown;
+	text-decoration: none;
+}
+.d1{
+	background-color: lightyellow;
+}

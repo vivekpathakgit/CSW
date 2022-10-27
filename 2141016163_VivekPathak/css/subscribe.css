@@ -1,0 +1,36 @@
+body{
+		font-family: arial;
+		}
+
+	#ig{
+		border-radius:50%;
+		width:100px;
+			
+		}
+	div{
+		display: inline-block;
+		width: 40%;
+		position: relative;
+		left: 24%;
+		text-align: center;
+		background-color: grey;
+		padding: 30px;
+		border-radius: 5px;
+		}
+	table{
+		margin-left: auto;
+		margin-right: auto;
+		font-family: tahoma;
+		text-align:left;
+		}
+	td{
+		border: 10px solid grey;
+		}
+	#s{
+		background-color:coral;
+		width:40%;
+		border: none;
+		font-size: 16px;
+		border-radius: 7px;
+		padding: 4px;
+		}

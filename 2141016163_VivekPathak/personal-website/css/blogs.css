@@ -1,0 +1,18 @@
+body{
+	
+	background-color:aliceblue ;
+	}
+.b1{
+	display: block;
+	padding: 40px;
+	margin: 40px;
+	background-color: lightcoral;
+	border-radius: 30px;
+	}
+p, h1, h2{
+	text-align: center;
+}
+.d1{
+	background-color: lightyellow;
+}
+

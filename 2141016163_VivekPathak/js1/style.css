@@ -1,0 +1,26 @@
+body{
+	font-family: tahoma;
+	text-align: center;
+	background-color: black;
+	}
+.d1{
+	border: 2px solid black;
+	width: 300px;
+	margin-left:8%;
+	padding: 20px;
+	background-color: #e4ebed;
+	}
+	
+
+ul{
+	width: 150px;
+	margin: auto;
+	margin-bottom: 20px;
+	}
+li{
+	text-align: left;
+	}
+#bgi{
+	position: absolute;
+	top : 0px;
+	}
