@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project</title>
+	<style>
+		.main{
+				padding: 30px;
+				border: 3px black solid;
+			}
+				
+		.colors, .inputs{
+				
+				text-align: center;
+				 
+			}
+		.container{
+			background-color: #CFF5E7;
+			padding: 40px;
+			}
+		body{
+			margin: 50px;
+			}
+		#black, #blue, #red{
+			display: inline-block;
+			height: 300px;
+			width: 10px;
+			margin:100px; 
+		}
+		.box1{
+			height: 30px;
+			width: 30px;
+			border: 2px black solid;
+			position: absolute;
+			display: inline-block;
+			top: 55%;
+			right: 60%;
+			background-color: coral;
+			}
+		.box2{
+			height: 30px;
+			width: 30px;
+			border: 2px black solid;
+			
+			}
+		
+		
+		
+	</style>
+</head>
+<body>
+		
+	<div class="main">
+		
+	<div class="container">
+		
+		<div class ="inputs">
+			
+			from <input type="text" > To <input type="text"> <button>MOVE</button>
+
+		</div>
+		<div class="colors">
+		
+			<div id="black" style="background-color: black"></div>
+			<div id="blue" style="background-color: blue"></div>
+			<div id="red" style="background-color: red"></div>
+
+			<div class="box1"></div>
+			<div class="box2"></div>
+	
+		</div>
+		
+	</div>
+			
+	</div>
+	<script>
+		
+		
+		
+        $("button").click(function({
+           	
+			
+			$( ".box2" ).css("margin", "150px");
+            
+        });
+   
+		
+</script>
+ 
+</body>
+</html>
+
+
