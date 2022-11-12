@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 600px;
+            width: 600px;
+            background-color: #CFF5E7;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+        }
+        .line1{
+            margin-top: 30px;
+            width: 5px;
+            height: 400px;
+            position: relative;
+            right: 100px;
+            display: inline-block;
+            background-color: black;
+        }
+        .line2{
+            width: 5px;
+            height: 400px;
+            background-color: blue;
+            display: inline-block;
+            position: relative;
+        }
+        .line3{
+            width: 5px;
+            height: 400px;
+            background-color: red;
+            display: inline-block;
+            position: relative;
+            left: 100px;
+        }
+        .box1{
+            width: 80px;
+            height: 20px;
+            top: 376px;
+            right: 40px;
+            border: 2px solid black;
+            position: relative;
+            margin-bottom: none;
+        }
+        .box2{
+            width: 60px;
+            height: 20px;
+            top: 330px;
+            right: 30px;
+            border: 2px solid black;
+            position: relative;
+            margin-bottom: none;
+        }
+        .box3{
+            width: 40px;
+            height: 20px;
+            top: 284px;
+            right: 20px;
+            border: 2px solid black;
+            position: relative;
+            margin-bottom: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <label for="from">From: </label>
+        <input type="number" id="from" name="from">
+        <label for="to">To: </label>
+        <input type="number" id="to" name="to">
+        <button onclick="move()">MOVE</button>
+        <br>
+        <div class="line1">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+        </div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    <script src="jquery.js"></script>
+    <script>
+        function move(){
+            var f =$("#from").val();
+            var i =$("#to").val();
+            if(f>3 && i>3){
+                alert("Invalid Input");
+            }
+            else{
+                if(f==1 && i==2){
+                    $(".line2").append($(".line1>.box3"))
+                }
+                else if(f==1 && i==3){
+                    $(".line3").append($(".line1>div"));
+                }
+            }
+        }
+    </script>
+</body>
+</html>
