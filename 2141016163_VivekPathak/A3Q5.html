@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>A3Q1</title>
+	<style>
+		#box{
+			background-color: red;
+			width: 100px;
+			height: 100px;
+			}
+		#box2{
+			background-color: blue;
+			width: 100px;
+			height: 100px;
+			}
+		
+   	</style>
+</head>
+<body>
+    <p>Hello</p>
+	<button class="btn1"> slide </button>
+
+	<div id="box" ></div>
+	<button id="b2">Animation</button><br>
+
+	<div id="box2" ></div>
+	<button id="b3">Fade In</button>
+
+	<div id="box3" ></div>
+	<button id="b4">Hide</button>
+
+	
+    <script src="jquery.js"></script>
+    <script>
+		
+		$("p").hide();
+			
+        	$(".btn1").click(function(){
+    			$("p").slideDown();
+  		});
+  		
+		$("#b2").click(function(){
+ 			$("#box").animate({height: "300px"});
+		});
+		$("#box2").hide();
+		$("#b3").click(function(){
+  			$("#box2").fadeIn();
+		});
+
+		$("#b4").click(function(){
+  			$("#box").fadeIn();
+		});
+
+    </script>
+</body>
+</html>

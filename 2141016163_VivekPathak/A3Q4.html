@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>A3Q4</title>
+   
+</head>
+<body>
+    <button>Pop up</button>
+	<p id="dia" title="Error Dialog"></p>
+    <script src="jquery.js"></script>
+	<script src="jquery.min.js"></script>
+    <script>
+        	$("button").click(function(){
+			$("#dia").text("This is an error message");
+			$("#dia").dialog("open");
+		});
+		
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>A3Q3</title>
+   
+</head>
+<body>
+    <form>
+		<input id="field1" type="text" value="Field 1">
+		<input id="field2" type="text" value="Field 2">
+	</form>
+	
+	<p></p>
+	
+    <script src="jquery.js"></script>
+    <script>
+       $("#field1").blur(function(){
+			$("p").text("Field 1 is blur");
+		}); 
+	$("#field2").blur(function(){
+			$("p").text("Field 2 is blur");
+		});
+    </script>
+</body>
+</html>
