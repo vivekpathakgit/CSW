@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>A3Q6</title>
+    <style>
+        table, tr, td, th{
+            border: black solid 1px;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <button id="addRow">Add Row</button><br><br>
+    <table>
+        <tr><th>Rows</th></tr>
+        <tr id="r0"><td>This is row 0</td></tr>
+    </table>
+    <br><br>
+    <button id="chnClr">Color table data</button>
+    <div id="textField">Input: <input type="text" id="inn"></div>
+    <button id="del">Delete</button>
+
+    <div id="d1">Hello</div>
+    <script src="jquery.js"></script>
+    <script>
+        let rowNo = 1;
+        $("#addRow").click(function(){ 
+            $("table").append('<tr id="r'+rowNo+'"><td>This is row '+rowNo++ +'</td></tr>' );
+        });
+        $("#chnClr").click(function(){ 
+            $("td").css("color", "blue");
+        });
+        $("#del").click(function(){
+            let id = $('#inn').val();
+            // console.log(id);
+            let givenId = '#'+id;
+            $(givenId).remove();
+        });
+    </script>
+</body>
+</html>
