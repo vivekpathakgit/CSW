@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<style>
+		.outermost * { 
+		 display: block;
+		 border: 3px solid lightgrey;
+		 color: green;
+ 		padding: 6px;
+ 		margin: 18px;
+		}
+	</style>
+	
+	</head>
+	<body >
+		<button id="b1">Parent</button> <button id="b2">Parents</button> <br>
+		<input type="text" id="inn"><button id="b3">ParentsUntil</button>
+		<div class="outermost"> 
+		
+ 		<div style="width:400px;" class="divi" id="div">div (great-grandparent)
+			<div>
+ 				<ol id="ol1">ol (grandparent) 
+ 				<ol>ol (grandparent) 
+ 				<ol>ol (grandparent) 
+
+ 				<li>li (direct parent)
+ 				<span>span</span>
+ 				</li>
+ 				</ol>
+ 				</ol> 
+ 				</ol> 
+ 
+			</div>
+			
+ 		</div>
+
+		<div style="width:400px;" id="div">div (grandparent)
+			<p>p (direct parent)
+				<span>span</span>
+			</p>
+		</div>
+		</div>
+
+		<script src="jquery.js"></script>
+		<script>
+
+		$(document).ready(function(){
+			 	$("#b1").click(function(){
+					$("span").parent().css({"color": "blue", "border": "3px solid blue"});
+				});
+				$("#b2").click(function(){
+					$("span").parents().css({"color": "blue", "border": "3px solid blue"});
+				});
+				$("#b3").click(function(){
+					let inn ="#"+ $("#inn").val();
+					let valu = "inn".charCodeAt(0);;
+					console.log(valu);
+					if(valu%100>=32 && valu%100<=64){
+						alert("Invalid Input");
+					}
+					else if($("body").find(inn).length!=0){
+						$("span").parentsUntil(inn).css({"color": "blue", "border": "3px solid blue"});
+					}
+					
+					else{
+						alert("Invalid Input");
+		}
+				});
+			});
+		
+
+		</script>
+	</body>
+</html> 

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<style>
+		.outermost * { 
+		 display: block;
+		 border: 3px solid orange;
+		 color: green;
+ 		padding: 6px;
+ 		margin: 18px;
+		}
+	</style>
+	<script src="jquery.js"></script>
+	<script>
+	$(document).ready(function(){
+		 $("span").parent().css({"color": "blue", "border": "3px solid blue"});
+		});
+	</script>
+	</head>
+	<body class="outermost">body (great-great-grandparent)
+ 		<div style="width:400px;" class="divi">div (great-grandparent)
+ 			<ul>ul (grandparent) 
+ 			<li>li (direct parent)
+ 			<span>span</span>
+ 			</li>
+ 			</ul> 
+ 		</div>
+	</body>
+</html> 
