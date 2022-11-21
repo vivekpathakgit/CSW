@@ -9,40 +9,63 @@
 <body>
     <h2>Rock, Paper & Scissors</h2>
     <div class="d1">
-    <button id="b1" value="b1"><img src="stone.png" alt="" width="200px"></button>
-    <button id="b2" value="b2"><img src="paper.png" alt="" width="200px"></button>
-    <button id="b3" value="b3"><img src="scissor.png" alt="" width="200px"></button>
+    <button id="b1" ><img src="stone.png" alt="Stone" width="200px"></button>
+    <button id="b2" ><img src="paper.png" alt="Paper" width="200px"></button>
+    <button id="b3" ><img src="scissor.png" alt="Scissors" width="200px"></button>
     </div>
     <h3>Computer output: </h3>
     <div class="d2"></div>
     <div class="d3"></div>
     <script src="jquery.js"></script>
     <script>
-        let v = "";
-    $("button").click(function(){
-       let x = Math.random();
-       $(".b1").click(function(){ v =$(".b1").val(); });
-       $(".b2").click(function(){ v =$(".b1").val(); });
-       $(".b3").click(function(){ v =$(".b1").val(); });
-       if(x<=1/3){
-        $(".d2").html('<img src="stone.png" width="200px">');
-        if(v=="b3"){$(".d3").text("You lose")}
-        else if(v=="b2"){$(".d3").text("You win");}
-        else{$(".d3").text("Draw");}
-       }
-       else if(x<=2/3){
-        $(".d2").html('<img src="paper.png" width="200px">');
-        if(v=="b3"){$(".d3").text("You win")}
-        else if(v=="b2"){$(".d3").text("Draw");}
-        else{$(".d3").text("You win");}
-       }
-       else{
-        $(".d2").html('<img src="scissor.png" width="200px">');
-        if(v=="b3"){$(".d3").text("You win")}
-        else if(v=="b2"){$(".d3").text("Draw");}
-        else{$(".d3").text("You win");}
-       }
-    });
+    
+        let x = 0;
+       $("#b1").click(function(){ 
+        x = Math.random();
+            if(x<=1/3){
+                $(".d2").html('<img src="stone.png" alt="stone" width="200px">');
+                $(".d3").text("Draw");
+            }
+            else if(x<=2/3){
+                $(".d2").html('<img src="paper.png" alt="paper" width="200px">');
+                $(".d3").text("You Loose");
+            }
+            else{
+                $(".d2").html('<img src="scissor.png" alt="scissor" width="200px">');
+                $(".d3").text("You Win");
+            }
+        });
+        $("#b2").click(function(){ 
+            x = Math.random();
+            if(x<=1/3){
+                $(".d2").html('<img src="stone.png" alt="stone" width="200px">');
+                $(".d3").text("You Win");
+            }
+            else if( x<=2/3){
+                $(".d2").html('<img src="paper.png" alt="paper" width="200px">');
+                $(".d3").text("Draw");
+            }
+            else{
+                $(".d2").html('<img src="scissor.png" alt="scissor" width="200px">');
+                $(".d3").text("You Loose");
+            }
+        });
+        $("#b3").click(function(){ 
+            x = Math.random();
+            if(x<=1/3){
+                $(".d2").html('<img src="stone.png" alt="stone" width="200px">');
+                $(".d3").text("You Loose");
+            }
+            else if(x<=2/3){
+                $(".d2").html('<img src="paper.png" alt="paper" width="200px">');
+                $(".d3").text("You Win");
+            }
+            else{
+                $(".d2").html('<img src="scissor.png" alt="scissor" width="200px">');
+                $(".d3").text("Draw");
+            }
+        });
+       
     </script>
 </body>
 </html>
