@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A3Q8</title>
+    <style>
+      *{
+        text-align: center;
+      }
+      table, td, tr, th{
+        border: 1px solid black;
+        border-collapse: collapse;
+        margin: 20px;
+        padding: 20px;
+       
+      }
+      table{
+        width: 500px;
+      }
+      .tab{
+        display: inline-block;
+        width: 550px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Listed Jobs</h1>
+    <div class="drop">
+    <select name="categories" id="cat">
+      <option value="c1" id="c1">Software Enng.</option>
+      <option value="c2" id="c2">Mech Enng.</option>
+      <option value="c3" id="c3">Civil Enng.</option>
+      <option value="c4" id="c4">Eelctrical Enng.</option>
+      <option value="c5" id="c5">Enviorment Enng.</option>
+      <option value="c6" id="c6">Food Enng.</option>
+      <option value="c7" id="c7">Farm Enng.</option>
+      <option value="c8" id="c8">Biotech Enng.</option>
+      <option value="c9" id="c9">Doctor</option>
+      <option value="c10" id="c10">Plumber</option>
+      <option value="c11" id="c11">Manager</option>
+      <option value="c12" id="c12">Ceo</option>
+      <option value="c13" id="c13">Director</option>
+      <option value="c14" id="c14">Faculty</option>
+      <option value="c15" id="c15">Peon</option>
+      <option value="c16" id="c16">Security</option>
+      <option value="c17" id="c17">Web Developer</option>
+      <option value="c18" id="c18">Elecrician</option>
+      <option value="c19" id="c19">UI Developer</option>
+      <option value="c20" id="c20">Artist</option>
+    </select>
+    <input type="button" value="button" id="btn" />
+  </div>
+    
+    <div class="tab">
+    <table class="main">
+      <tr class="head"><th>Position</th> <th>Location</th></tr>
+     
+        <tr class="c1"><td>Sr CS Engg.</td><td>Mumbai</td></tr>
+        <tr class="c1"><td>Sr CS Engg.</td><td>Gurgaon</td></tr>
+        <tr class="c1"><td>Jr CS Engg.</td><td>Kolkata</td></tr>
+        <tr class="c1"><td>Jr CS Engg.</td><td>Gurgaon</td></tr>
+        <tr class="c1"><td>Jr CS Engg.</td><td>Mumbai</td></tr>
+
+        <tr class="c2"><td>Sr Mech Engg.</td><td>Pune</td></tr>
+        <tr class="c2"><td>Sr Mech Engg.</td><td>Hydrabad</td></tr>
+        <tr class="c2"><td>Jr Mech Engg.</td><td>Delhi</td></tr>
+        <tr class="c2"><td>Jr Mech Engg.</td><td>Pune</td></tr>
+        <tr class="c2"><td>Jr Mech Engg.</td><td>Hydrabad</td></tr>
+      
+        <tr class="c3"><td>Sr civil Engg.</td><td>Mumbai</td></tr>
+        <tr class="c3"><td>Sr civil Engg.</td><td>Gurgaon</td></tr>
+        <tr class="c3"><td>Jr civil Engg.</td><td>Kolkata</td></tr>
+        <tr class="c3"><td>Jr civil Engg.</td><td>Gurgaon</td></tr>
+        <tr class="c3"><td>Jr civil Engg.</td><td>Mumbai</td></tr>
+    
+        <tr class="c4"><td>Sr Elec. Engg.</td><td>Pune</td></tr>
+        <tr class="c4"><td>Sr Elec. Engg.</td><td>Hydrabad</td></tr>
+        <tr class="c4"><td>Jr Elec. Engg.</td><td>Delhi</td></tr>
+        <tr class="c4"><td>Jr Elec. Engg.</td><td>Pune</td></tr>
+        <tr class="c4"><td>Jr Elec. Engg.</td><td>Hydrabad</td></tr>
+   
+        <tr class="c5"><td>Sr Env. Engg.</td><td>Mumbai</td></tr>
+        <tr class="c5"><td>Sr Env. Engg.</td><td>Gurgaon</td></tr>
+        <tr class="c5"><td>Jr Env. Engg.</td><td>Kolkata</td></tr>
+        <tr class="c5"><td>Jr Env. Engg.</td><td>Gurgaon</td></tr>
+        <tr class="c5"><td>Jr Env. Engg.</td><td>Mumbai</td></tr>
+  
+        <tr class="c6"><td>Sr Food Engg..</td><td>Pune</td></tr>
+        <tr class="c6"><td>Sr Food Engg..</td><td>Hydrabad</td></tr>
+        <tr class="c6"><td>Jr Food Engg..</td><td>Delhi</td></tr>
+        <tr class="c6"><td>Jr Food Engg..</td><td>Pune</td></tr>
+        <tr class="c6"><td>Jr Food Engg..</td><td>Hydrabad</td></tr>
+    
+        <tr class="c7"><td>Sr Farm Engg.</td><td>Mumbai</td></tr>
+        <tr class="c7"><td>Sr Farm Engg.</td><td>Gurgaon</td></tr>
+        <tr class="c7"><td>Jr Farm Engg.</td><td>Kolkata</td></tr>
+        <tr class="c7"><td>Jr Farm Engg.</td><td>Gurgaon</td></tr>
+        <tr class="c7"><td>Jr Farm Engg.</td><td>Mumbai</td></tr>
+      
+        <tr class="c8"><td>Sr Bio Engg.</td><td>Pune</td></tr>
+        <tr class="c8"><td>Sr Bio Engg.</td><td>Hydrabad</td></tr>
+        <tr class="c8"><td>Jr Bio Engg.</td><td>Delhi</td></tr>
+        <tr class="c8"><td>Jr Bio Engg.</td><td>Pune</td></tr>
+        <tr class="c8"><td>Jr Bio Engg.</td><td>Hydrabad</td></tr>
+      
+        <tr class="c9"><td>Sr Doctor</td><td>Mumbai</td></tr>
+        <tr class="c9"><td>Sr Doctor</td><td>Gurgaon</td></tr>
+        <tr class="c9"><td>Jr Doctor</td><td>Kolkata</td></tr>
+        <tr class="c9"><td>Jr Doctor</td><td>Gurgaon</td></tr>
+        <tr class="c9"><td>Jr Doctor</td><td>Mumbai</td></tr>
+      
+        <tr class="c10"><td>Sr Plumber</td><td>Pune</td></tr>
+        <tr class="c10"><td>Sr Plumber</td><td>Hydrabad</td></tr>
+        <tr class="c10"><td>Jr Plumber</td><td>Delhi</td></tr>
+        <tr class="c10"><td>Jr Plumber</td><td>Pune</td></tr>
+        <tr class="c10"><td>Jr Plumber</td><td>Hydrabad</td></tr>
+      
+        <tr class="c11"><td>Sr Manager</td><td>Mumbai</td></tr>
+        <tr class="c11"><td>Sr Manager</td><td>Gurgaon</td></tr>
+        <tr class="c11"><td>Jr Manager</td><td>Kolkata</td></tr>
+        <tr class="c11"><td>Jr Manager</td><td>Gurgaon</td></tr>
+        <tr class="c11"><td>Jr Manager</td><td>Mumbai</td></tr>
+      
+        <tr class="c12"><td>CEO</td><td>Pune</td></tr>
+        <tr class="c12"><td>CEO</td><td>Hydrabad</td></tr>
+        <tr class="c12"><td>CEO</td><td>Delhi</td></tr>
+        <tr class="c12"><td>CEO</td><td>Pune</td></tr>
+        <tr class="c12"><td>CEO</td><td>Hydrabad</td></tr>
+     
+        <tr class="c13"><td>Sr Director</td><td>Mumbai</td></tr>
+        <tr class="c13"><td>Sr Director</td><td>Gurgaon</td></tr>
+        <tr class="c13"><td>Jr Director</td><td>Kolkata</td></tr>
+        <tr class="c13"><td>Jr Director</td><td>Gurgaon</td></tr>
+        <tr class="c13"><td>Jr Director</td><td>Mumbai</td></tr>
+      
+        <tr class="c14"><td>Sr Faculty</td><td>Pune</td></tr>
+        <tr class="c14"><td>Sr Faculty</td><td>Hydrabad</td></tr>
+        <tr class="c14"><td>Jr Faculty</td><td>Delhi</td></tr>
+        <tr class="c14"><td>Jr Faculty</td><td>Pune</td></tr>
+        <tr class="c14"><td>Jr Faculty</td><td>Hydrabad</td></tr>
+     
+        <tr class="c15"><td>Peon</td><td>Mumbai</td></tr>
+        <tr class="c15"><td>Peon</td><td>Gurgaon</td></tr>
+        <tr class="c15"><td>Peon</td><td>Kolkata</td></tr>
+        <tr class="c15"><td>Peon</td><td>Gurgaon</td></tr>
+        <tr class="c15"><td>Peon</td><td>Mumbai</td></tr>
+      
+        <tr class="c16"><td>Guard</td><td>Pune</td></tr>
+        <tr class="c16"><td>Guard</td><td>Hydrabad</td></tr>
+        <tr class="c16"><td>Guard</td><td>Delhi</td></tr>
+        <tr class="c16"><td>Guard</td><td>Pune</td></tr>
+        <tr class="c16"><td>Guard</td><td>Hydrabad</td></tr>
+      
+        <tr class="c17"><td>Web Developer</td><td>Pune</td></tr>
+        <tr class="c17"><td>Web Developer</td><td>Hydrabad</td></tr>
+        <tr class="c17"><td>Web Developer</td><td>Delhi</td></tr>
+        <tr class="c17"><td>Web Developer</td><td>Pune</td></tr>
+        <tr class="c17"><td>Web Developer</td><td>Hydrabad</td></tr>
+     
+        <tr class="c18"><td>Sr Elecrician</td><td>Mumbai</td></tr>
+        <tr class="c18"><td>Sr Elecrician</td><td>Gurgaon</td></tr>
+        <tr class="c18"><td>Jr Elecrician</td><td>Kolkata</td></tr>
+        <tr class="c18"><td>Jr Elecrician</td><td>Gurgaon</td></tr>
+        <tr class="c18"><td>Jr Elecrician</td><td>Mumbai</td></tr>
+      
+        <tr class="c19"><td>UI Developer</td><td>Pune</td></tr>
+        <tr class="c19"><td>UI Developer</td><td>Hydrabad</td></tr>
+        <tr class="c19"><td>UI Developer</td><td>Delhi</td></tr>
+        <tr class="c19"><td>UI Developer</td><td>Pune</td></tr>
+        <tr class="c19"><td>UI Developer</td><td>Hydrabad</td></tr>
+     
+        <tr class="c20"><td>Sr Artist</td><td>Mumbai</td></tr>
+        <tr class="c20"><td>Sr Artist</td><td>Gurgaon</td></tr>
+        <tr class="c20"><td>Jr Artist</td><td>Kolkata</td></tr>
+        <tr class="c20"><td>Jr Artist</td><td>Gurgaon</td></tr>
+        <tr class="c20"><td>Jr Artist</td><td>Mumbai</td></tr>
+    
+    </table>
+  </div>
+  
+
+    <script src="jquery.js"></script>
+    <script>
+        //$(".c20").hide();
+      $("#btn").click(function () {
+        var category = $("#cat :selected").val();
+        $("tr").hide();
+        let x = "."+category;
+        $(".head").show();
+        $(x).show();
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>A3Q7</title>
+    <style>
+        body{
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        form{
+            display: inline-block;
+            background-color: aliceblue;
+            padding: 30px;
+            width: 60%;
+        }
+        form *{
+            
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sign-Up form</h1>
+    <form>
+        <label for="name">First Name: </label>
+        <input type="text" id="in1"><br>
+        <label for="name">Last Name: </label>
+        <input type="text" id="in2"><br>
+        <label for="email">Email: </label>
+        <input type="text" placeholder="Enter your email" id="em"><br>
+        <input type="submit" value="Submit" id="submit">
+
+    </form>
+        
+    <script src="jquery.js"></script>
+    <script>
+        let b = false;
+        $("#submit").click(function(){
+            if($("#in1").val()=="" || $("#in2").val()==""){
+                alert("Enter value");
+            }
+            for( i = 0; i<$("#em").val().length;i++){
+                if($("#em").val()[i] == "@"){
+                    b = true;
+                }
+            }
+            if(b==false){
+                alert("Enter Valid Email")
+            }
+        });
+        
+        
+    </script>
+</body>
+</html>
