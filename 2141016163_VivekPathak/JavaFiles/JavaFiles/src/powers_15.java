@@ -2,6 +2,9 @@ import java.util.Scanner;
 
 public class powers_15 {
 	static int power (int x , int y, int count, int c) {
+		if(y==0) {
+			return 1;
+		}
 		if(count==y) {
 			return x;
 		}
